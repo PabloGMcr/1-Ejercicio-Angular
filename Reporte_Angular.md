@@ -1,10 +1,11 @@
 
-#  Ejercico 5 : Reparacion de servicios y componente heroes. (Este fue el primer problema que trabaje para poder visualizar algo y  seguir con el resto)
-
-1. En servico heroes.services.ts
+# Reporte Angular
 
 
-* Reparar decorador
+#  Ejercicio 5 : Reparacion de servicios y componente heroes. (Este fue el primer problema que trabaje para poder visualizar algo y  seguir con el resto)
+
+
+1. En servicio heroes.services.ts: Reparar decorador
 ~~~js
 @Injectable({
   providedIn:'root'
@@ -27,8 +28,8 @@ export interface Heroe{
 4. En heroes.component.ts
 
 
-* Importo el servicio heroes e interface
-* Inyecto en el constructor el servicio heroes e interface
+* Importar el servicio heroes e interface
+* Inyectar en el constructor el servicio heroes e interface
 
 
 ~~~ts
@@ -45,7 +46,7 @@ import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
 
 ~~~
 
-5. En el componete heroe-tarjeta.componete.html: agregar la biografia e imagen por interpolacion 
+5. En el componente heroe-tarjeta.componete.html: agregar la biografia e imagen por interpolacion 
 
 ~~~html
 
@@ -74,10 +75,11 @@ import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
 
 # Ejercicio 2:  Agregar heroes
 
-1. En carpeta assets 
+1. En carpeta assets. 
+
 * Se deposita una imagen .png
 
-2. En servico heroes.services.ts se crean las cartes de los nuevos heroes.
+2. En servico heroes.services.ts se crean las cartas de los nuevos heroes.
 
 ~~~ts
  {
@@ -89,7 +91,7 @@ import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
    },
 ~~~
 
-El poroceso se repitira 20 veces. Por motivos de tiempos solo pongo uno a manera de ejemplo. 
+Esto se repite 20 veces. Por motivos de tiempos solo pongo uno a manera de ejemplo. 
 
 # Ejercicio 3 & 4 : Reparar botom, redirigir a componete Hero, y ver imagen. 
 
@@ -104,16 +106,16 @@ El poroceso se repitira 20 veces. Por motivos de tiempos solo pongo uno a manera
         <a class="nav-link" [routerLink]="['heroe/:id']"></a> <--- No es necesario que aparesca pintado en el nav  
       </li>
 ~~~
-4. Descomenetar el botton en heroe-targeta y completar palabra index.
+4. Descomentar el botton en heroe-targeta y completar palabra index.
 
 ~~~html
  <a [routerLink]="['/heroe',index]" class="btn btn-outline-primary">Ver más link...</a> 
 ~~~
 
-# 6. Bucador:
+# 6. Ejercicio 6: Bucador
 
-1. Revisar si el bucador esta configuarado en app.routes.ts
-2. Descomente el `console.log` de `termino` en buscador.component.ts para ver si el bucador esta enrutando en consola.
+1. Revisar si el buscador esta configurado en app.routes.ts
+2. Descomentar el `console.log` de `termino` en buscador.component.ts para ver si el buscador esta enrrutando en consola.
 3. Configurar el buscador.component.ts:
 
 *  Inyectar el servicio HeroesService:
@@ -150,3 +152,18 @@ constructor( private activatedRoute:ActivatedRoute,
 ~~~html
 <div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
 ~~~
+
+# Ejercicio 7: Footer
+
+El proyecto usa un footer con bootstrap.
+~~~ts
+<footer class="bg-dark text-center text-lg-start fixed-bottom">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    
+    <a class="text-light">© 2023 Copyright : Proyecto VLA</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+~~~
+
