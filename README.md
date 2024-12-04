@@ -30,8 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Reporte Angular
 
+Examen final VLA. Consistio en una serie de reparaciones al codigo de un proyecto hecho en Angular 
 
-#  Ejercicio 5 : Reparacion de servicios y componente heroes. (Este fue el primer problema que trabaje para poder visualizar algo y  seguir con el resto)
+##  Ejercicio 5 : Reparacion de servicios y componente heroes. (Este fue el primer problema que trabaje para seguir con el resto)
 
 
 1. En servicio heroes.services.ts: Reparar decorador
@@ -91,7 +92,7 @@ import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
 
 **Con esto ya se ven las cartas en componente heroes**
 
-# Ejercicio 1: Reparacion de Rutas
+## Ejercicio 1: Reparacion de Rutas
 
 1. En app.routes.ts
 
@@ -102,7 +103,7 @@ import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
  { path: 'about', component: AboutComponent },
 ~~~
 
-# Ejercicio 2:  Agregar heroes
+## Ejercicio 2:  Agregar heroes
 
 1. En carpeta assets. 
 
@@ -122,7 +123,7 @@ import { Heroe, HeroesService } from 'src/app/servicios/heroes.service';
 
 Esto se repite 20 veces. Por motivos de tiempos solo pongo uno a manera de ejemplo. 
 
-# Ejercicio 3 & 4 : Reparar botom, redirigir a componete Hero, y ver imagen. 
+## Ejercicio 3 & 4 : Reparar botom, redirigir a componete Hero, y ver imagen. 
 
 1. Hacer `path` en app.routes.ts
 
@@ -141,7 +142,7 @@ Esto se repite 20 veces. Por motivos de tiempos solo pongo uno a manera de ejemp
  <a [routerLink]="['/heroe',index]" class="btn btn-outline-primary">Ver más link...</a> 
 ~~~
 
-# 6. Ejercicio 6: Bucador
+## 6. Ejercicio 6: Bucador
 
 1. Revisar si el buscador esta configurado en app.routes.ts
 2. Descomentar el `console.log` de `termino` en buscador.component.ts para ver si el buscador esta enrrutando en consola.
@@ -182,7 +183,7 @@ constructor( private activatedRoute:ActivatedRoute,
 <div class="row animated fadeIn fast" *ngIf="heroes.length == 0">
 ~~~
 
-# Ejercicio 7: Footer
+## Ejercicio 7: Footer
 
 El proyecto usa un footer con bootstrap.
 ~~~ts
